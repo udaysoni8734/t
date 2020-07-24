@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Online Product Rating</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link href="css/index.css" rel="stylesheet" />
+    <link href="css/popover.css" rel="stylesheet" />
+    <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <script src="js/footer.js" type="text/javascript"></script>
+    <!-- <script src="js/signup.js" type="text/javascript"></script>
+    <script src="js/signin.js" type="text/javascript"></script> -->
+    <script src="js/productsearch.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50" onload="Username()">
+ <div id="container">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+        <a class="navbar-brand" href="#myPage">Teacher Rating System</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="TRS.html">Home</a></li>
+          <li><a href="#Deans">Deans</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="usermore" >Department
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              
+              <li><a href="Subjects/csemainphp.php" data-toggle="modal" >CSE    </a></li>
+              <li><a href="ece.php" data-toggle="modal" >ECE    </a></li> 
+              <li><a href="mec.php" data-toggle="modal" >MECH   </a></li> 
+              <li><a href="mte.php" data-toggle="modal" >M.TECH </a></li> 
+              <li><a href="mat.php" data-toggle="modal" >MATH   </a></li> 
+              <li><a href="bba.php" data-toggle="modal" >BBA    </a></li> 
+
+            </ul>
+          </li>
+          <li><a href="#search"><span class="glyphicon glyphicon-search"></span></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="images/main2.jpg" alt="Internet Issue" width="1000" height="600">
+        <div class="carousel-caption">
+         <h3>Lets your Professor know what you feel about him/her</h3> 
+        </div>      
+      </div>
+
+      <div class="item">
+        <img src="images/second.jpg" alt="Internet Issue" width="1000" height="500">
+        <div class="carousel-caption">
+          <h3>Let do it!</h3>
+        </div>      
+      </div>
+      <div class="item">
+        <img src="images/third.jpg" alt="Internet Issue" width="1000" height="500">
+        <div class="carousel-caption">
+          <h3></h3>
+        </div>      
+      </div>
+      <div class="item">
+        <img src="images/fourth.jpg" alt="Internet Issue" width="1000" height="500">
+        <div class="carousel-caption">
+          <h3></h3>
+        </div>      
+      </div>
+      <div class="item">
+        <img src="images/fifth.jpg" alt="Internet Issue" width="1000" height="500">
+        <div class="carousel-caption">
+          <h3></h3>
+        </div>      
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<!-- FEATURING -->
+    <div id="upcoming">
+      <h1><a name="Deans">Deans As Pre School</a></h1>
+      <div id="img">
+        Dean Academics<a href="aDean" title="Dean Academics" data-toggle="popover" data-trigger="hover" data-content="balala"><img id="1" src="images/dean/DEAN.jpg" width="250px" height="300px" alt="dean"/></a>
+            Dean SCOPE <a href="csDean" title="Dean SCOPE" data-toggle="popover" data-trigger="hover" data-content="balala"><img id="2" src="images/dean/SCOPE.jpg" width="250px" height="300px" alt="csdean"/></a>
+            Dean SCENE<a href="ecDean" title="Dean SCENE" data-toggle="popover" data-trigger="hover" data-content="balala"><img id="3" src="images/dean/SENSE.jpg" width="250px" height="300px" alt="csdean"/></a>
+            Dean Language<a href="LanDean" title="Dean Language" data-toggle="popover" data-trigger="hover" data-content="balala"><img id="4" src="images/dean/LANDEAN.jpg" width="250px" height="300px" alt="mtdean"/></a>
+            Dean Mech<a href="mecDean" title="Dean Mechinal" data-toggle="popover" data-trigger="hover" data-content="balala"><img id="5" src="images/dean/MECDEAN.jpg" width="250px" height="300px" alt="mecdean"/></a>
+            Dean Business<a href="bbaDean" title="Dean Business" data-toggle="popover" data-trigger="hover" data-content="balala"><img id="6" src="images/dean/BUSINESSDEAN.jpg" width="250px" height="300px" alt="bbadean"/></a>
+            Dean Maths<a href="MatDean" title="Dean Maths" data-toggle="popover" data-trigger="hover" data-content="balala"><img id="7" src="images/dean/matdean.jpg" width="250px" height="300px" alt="matdean"/></a>
+            Research Dean<a href="RscDean" title="Research Dean" data-toggle="popover" data-trigger="hover" data-content="balala"><img id="8" src="images/dean/RESEARCHDEAN.jpg" width="250px" height="300px" alt="rscdean"/></a>   
+    </div>
+    </div>
+<!-- search -->
+      <div id="index1" >
+      <a name="search"></a> 
+      <h1>professor Search</h1>
+      <form action="productsearch.php" class='searchtext' method = "POST">
+          <input type="text" placeholder="Find your professor " name = "professor name"/>
+          <input class="search" placeholder="Search" type="submit" />
+      </form>
+    </div>
+
+<!-- Modal sign in -->
+<div class="modal fade" id="signin" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4><span class="glyphicon glyphicon-user" id="sin"></span> SIGN IN</h4>
+      </div>
+      <div class="modal-body">
+        <form role="form"  action="login.php" method="post">
+          <div class="form-group">
+            <label for="username"><span class="glyphicon glyphicon-pencil"></span> User name</label>
+            <input type="text" class="form-control" id="signinusername" placeholder="Enter user name" name="username">
+          </div>
+          <div class="form-group">
+            <label for="psw"><span class="glyphicon glyphicon-info-sign"></span> Password</label>
+            <input type="password" class="form-control" id="psw" placeholder="Enter Password" name="psw">
+          </div>
+          <button type="submit" class="btn btn-block" name="submit" >Log In 
+            <span class="glyphicon glyphicon-ok"></span>
+            <span class="loading"></span>
+          </button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+          <span class="glyphicon glyphicon-remove"></span> Cancel
+        </button>
+        <p>Don't have an account?<a href="#signup" data-toggle="modal" data-target="#signup" data-dismiss="modal">register</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal sign up-->
+<div class="modal fade" id="signup" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4><span class="glyphicon glyphicon-user"></span> SIGN UP</h4>
+      </div>
+      <div class="modal-body">
+      <span id="ack"></span> 
+      
+        <form role="form" method="POST" id="signupform" >
+          <div class="form-group">
+            <label for="usrname"><span class="glyphicon glyphicon-pencil"></span> User Name</label>
+            <input type="text" class="form-control" id="signupusername" placeholder="Enter user name" name="username" onfocus='spanclear("span1")'>
+            <span class="username_val validation" id='span1'></span>
+          </div>
+          <div class="form-group">
+            <label for="psw"><span class="glyphicon glyphicon-info-sign"></span> Password</label>
+            <input type="password" class="form-control" id="signuppsw" placeholder="At least 8 characters including letter and number"  name="psw"  onfocus="spanclear('span2')">
+            <span class="password_val validation" id='span2'></span>
+          </div>
+          <div class="form-group">
+            <label for="email"><span class="glyphicon glyphicon-envelope"></span> Email</label>
+            <input type="text" class="form-control" id="signupemail" placeholder="Enter Email"  name="email" onfocus="spanclear('span3')">
+            <span class="email_val validation" id='span3' ></span>
+          </div>
+          <div class="form-group">
+            <label for="dob"><span class="glyphicon glyphicon-calendar"></span> Date of Birth</label>
+            <input type="text" class="form-control" id="signupdob" placeholder="Enter Date of Birth as the format(YYYY-MM-DD)"  name="dob" onfocus="spanclear('span4')">
+             <span class="dob_val validation" id='span4' ></span>
+          </div>
+          <button type="button" class="btn btn-block" name="signup" id="submit" onclick="saveUserInfo(this.form)" formtarget="_self">Sign up
+            <span class="glyphicon glyphicon-ok"></span>
+            <span class="loading"></span>
+          </button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+          <span class="glyphicon glyphicon-remove"></span> Cancel
+        </button>
+        <p>Already have an account? <a data-dismiss="modal" href="#signin" data-toggle="modal" data-target="#signin" >Sign in</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Footer -->
+<footer class="text-center">
+  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a><br><br>
+  <p>Uday Soni</p> 
+</footer>
+  </div>
+ </div>
+</body>
+</html>
